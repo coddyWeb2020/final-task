@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.header{
+	height: 500px; /*Высота*/
+	background-image: url(../img/header.jpg); /*Заполняем контейнер картинкой*/
+	background-size: cover;
+	text-align: center; /*Текст по центру*/
+}
+
+.header h1{
+	font-size: 60px;
+	padding-top: 200px;
+	margin-bottom: 20px;
+	color: white;
+	text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+
+.grid{
+	display: flex;
+	flex-direction: row; 
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.grid-item{
+	flex-direction: column;
+	width: 250px; /*Ширина*/
+	background-color: white; /*Цвет фона*/
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /*Тень*/
+	margin: 20px; /*Отступы*/
+	
+}
+
+.grid-item img{
+	height: 350px;
+	width: inherit;/*Применяем ширину родительского контейнера*/
+	margin-bottom: 10px;
+}
+
+.grid-item p {
+	padding: 20px;
+	text-align: justify;
+}
+
+
+.about{
+	background-color: #e8e8e8; /*Цвет фона*/
+	padding: 55px; /*Внутренние отступы*/
+	text-align: justify; /*Выравнивание текста*/
+	height: 400px;
+}
+
+.about img{
+	float: left; /*Расположение карнтики слева*/
+	height: 250px; /*Высота картинки*/
+	margin: 25px; /*Внешние отступы*/
+}
+
+.about p{
+	padding-top: 50px;
+}
+
+.footer{
+	height: 200px; /*Высота*/
+	background-image: url(../img/footer.jpg); /*Заполняем контейнер картинкой*/
+	background-size: cover;
+	text-align: center; /*Текст по центру*/
+}
+
+.footer p{
+	color: white;
+	padding-top: 100px;
+}
